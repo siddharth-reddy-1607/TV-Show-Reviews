@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #14365d;
+  --secondary-color: #d85c27;
+  --text-color: aliceblue;
+  --hover-color: #c5cbe3;
+}
+
+html,
+body {
+  background-color: #ffe3a9;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--text-color);
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Categories {
+  display: inline;
+  padding: 0.5rem;
+  border: 1px solid black;
+  margin: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#Categories:hover {
+  color: var(--primary-color);
+}
+#ShowList {
+  padding-top: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  #ShowList {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+img {
+  height: 375px;
+  width: 225px;
+}
+
+#Shows {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+#name,
+#img,
+#rating {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1rem;
+}
